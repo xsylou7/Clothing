@@ -1,0 +1,41 @@
+:root {
+  /* Atmosphere — cool stone + forest ink (fashion editorial) */
+  --bg: #e9e6e0;
+  --bg-deep: #ddd8cf;
+  --surface: #f5f3ef;
+  --surface-2: #fbfaf8;
+  --ink: #141816;
+  --ink-soft: #3a403c;
+  --muted: #7a817c;
+  --line: rgba(20, 24, 22, 0.09);
+  --line-strong: rgba(20, 24, 22, 0.16);
+
+  --accent: #1f3d32;
+  --accent-soft: #dce8e2;
+  --accent-warm: #b89a72;
+  --accent-warm-soft: #f0e8dc;
+
+  --available: #2d6a4f;
+  --laundry: #9a7b2f;
+  --unavailable: #8f3a3a;
+
+  --radius-sm: 12px;
+  --radius: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  --shadow-soft: 0 12px 40px rgba(20, 24, 22, 0.08);
+  --shadow-lift: 0 18px 50px rgba(20, 24, 22, 0.12);
+
+  --header-h: 64px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-ui: "Outfit", sans-serif;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --max-w: 430px;
+}

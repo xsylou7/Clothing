@@ -1,0 +1,96 @@
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes menu-item-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.45; transform: scale(0.96); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes spin-ring {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes heart-pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.anim-rise {
+  animation: rise-in 0.5s var(--ease) both;
+}
+
+.generating {
+  display: grid;
+  place-items: center;
+  gap: 18px;
+  padding: 48px 20px;
+  text-align: center;
+}
+
+.generating-ring {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid rgba(31, 61, 50, 0.15);
+  border-top-color: var(--accent);
+  animation: spin-ring 0.9s linear infinite;
+}
+
+.generating-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+}
+
+.fav-btn.pop {
+  animation: heart-pop 0.35s var(--ease);
+}
+
+.shimmer-bar {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent-soft), var(--accent-warm-soft), var(--accent-soft));
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
