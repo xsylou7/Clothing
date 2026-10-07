@@ -6,7 +6,7 @@ Pensé **mobile first** (viewport téléphone ~390px, menu déroulant premium, g
 
 ## Démo en ligne
 
-https://xsylou7.github.io/clothing/
+https://xsylou7.github.io/Clothing/
 
 ## Lancer en local
 
