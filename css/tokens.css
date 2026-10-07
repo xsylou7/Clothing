@@ -1,0 +1,42 @@
+:root {
+  /* Cool gallery mist — fashion editorial, not cream atelier */
+  --bg: #e8eaee;
+  --bg-deep: #dfe2e8;
+  --surface: #ffffff;
+  --surface-2: #f6f7f9;
+  --ink: #101114;
+  --ink-soft: #3a3f48;
+  --muted: #7a8290;
+  --line: rgba(16, 17, 20, 0.08);
+  --line-strong: rgba(16, 17, 20, 0.14);
+
+  --accent: #134e4a;
+  --accent-soft: #d7ebe8;
+  --accent-mark: #9ef0d2;
+  --menu-bg: #0c0c0e;
+  --menu-fg: #f4f5f7;
+
+  --available: #1f7a55;
+  --laundry: #a67c2d;
+  --unavailable: #a33b3b;
+
+  --radius-sm: 12px;
+  --radius: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 28px;
+
+  --shadow-soft: 0 10px 36px rgba(16, 17, 20, 0.07);
+  --shadow-lift: 0 18px 48px rgba(16, 17, 20, 0.12);
+
+  --header-h: 64px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  --font-display: "Syne", sans-serif;
+  --font-ui: "Plus Jakarta Sans", sans-serif;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --max-w: 430px;
+}

@@ -1,37 +1,38 @@
-# Philia — Dressing intelligent (Godot 4)
+# VESTIA — Dressing intelligent
 
-Prototype mobile d’application de mode / garde-robe, reconstruit en **Godot 4.7** (GDScript).
+Prototype HTML/CSS/JS d’une application mobile de mode et de gestion de garde-robe.
 
-## Lancer
+Pensé **mobile first** (viewport téléphone ~390px, menu déroulant premium, gestes tactiles).
 
-1. Ouvre le dossier dans Godot 4.7+ (`godot .` ou importer le `project.godot`)
-2. Appuie sur **F5** (scène principale : `scenes/main/main.tscn`)
+## Démo en ligne
+
+https://xsylou7.github.io/clothing/
+
+## Lancer en local
+
+Sers le dossier en local (les modules ES ne marchent pas en `file://`) :
 
 ```bash
-godot --path .
+# Si Python est installé :
+python -m http.server 5173
+
+# Ou avec Node :
+npx serve -l 5173
 ```
 
-Résolution de référence : **390×844** (portrait).
+Puis ouvre [http://localhost:5173](http://localhost:5173) et active la vue téléphone dans les DevTools.
 
-## Architecture
+## Structure
 
-| Dossier | Rôle |
-|---------|------|
-| `data/` | Resources + données mock (20 vêtements, 10 looks, 5 inspirations) |
-| `scripts/autoload/` | `AppState` (état) · `Nav` (navigation) |
-| `scripts/ui/` | Design tokens / helpers (`PhiliaStyle`) |
-| `scenes/main/` | Shell + header + menu déroulant |
-| `scenes/ui/` | Cartes vêtement / look |
-| `scenes/screens/` | Accueil, Dressing, Looks, Inspiration, Profil, Habille-moi, détails, ajout |
-| `archive/html-prototype/` | Ancien prototype HTML (référence) |
+- `css/` — design system, composants, menu, pages, animations
+- `js/data/mock.js` — données fictives (20 vêtements, 10 looks, 5 inspirations, profil)
+- `js/components/` — header, menu déroulant, cartes
+- `js/pages/` — écrans de l’app
+- `js/state.js` — état local (favoris, statuts, génération simulée)
+- `js/router.js` — navigation hash (`#/`, `#/dressing`, …)
 
-## Fonctionnalités mock
+## Sections
 
-- Menu déroulant premium depuis le haut
-- Dressing avec filtres et statuts (Disponible / Au lavage / Indisponible)
-- Looks + favoris
-- Habille-moi (génération simulée, ignore les pièces non dispo)
-- Ajout vêtement avec analyse fictive
-- Profil styliste
+Accueil · Dressing · Looks · Inspiration · Profil · Habille-moi · détail look / vêtement · ajout vêtement
 
-Pas d’IA réelle, auth, ni backend — volontairement.
+Tout fonctionne avec des données mockées — aucune IA, auth ou API distante.

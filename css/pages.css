@@ -1,0 +1,434 @@
+/* Home */
+.home-hero {
+  padding-top: 8px;
+}
+
+.home-hello {
+  font-family: var(--font-display);
+  font-size: clamp(2.15rem, 9vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.02;
+  margin: 6px 0 14px;
+}
+
+.home-hello em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.outfit-hero {
+  margin-top: 22px;
+  background: var(--surface);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.outfit-hero-visual {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  padding: 12px;
+  background: linear-gradient(180deg, #d5d9e0, #c8ced8);
+  min-height: 168px;
+}
+
+.outfit-hero-visual .piece {
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 140px;
+}
+
+.outfit-hero-body {
+  padding: 18px 18px 20px;
+}
+
+.outfit-hero-body h2 {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.outfit-hero-actions {
+  margin-top: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+/* Dressing */
+.filter-scroll {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  margin: 0 -18px 16px;
+  padding: 0 18px 4px;
+}
+
+.filter-scroll .chip {
+  flex-shrink: 0;
+}
+
+/* Looks list */
+.looks-list {
+  display: grid;
+  gap: 14px;
+}
+
+.look-card.full {
+  flex: none;
+  width: 100%;
+}
+
+.look-card.full .look-card-stack {
+  height: 220px;
+}
+
+/* Inspiration */
+.inspire-cta {
+  padding: 28px 20px;
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(100% 80% at 100% 0%, rgba(158, 240, 210, 0.16) 0%, transparent 50%),
+    linear-gradient(145deg, #141418, #0f1f1d);
+  color: #f4f5f7;
+  text-align: center;
+}
+
+.inspire-cta h2 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 8px 0 10px;
+}
+
+.inspire-cta p {
+  opacity: 0.65;
+  font-size: 0.92rem;
+  margin-bottom: 18px;
+}
+
+.inspire-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  margin: 0 -18px;
+  padding: 0 18px 4px;
+  scroll-snap-type: x mandatory;
+}
+
+.inspire-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.inspire-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  min-height: 160px;
+  position: relative;
+  border: 1px solid var(--line);
+  text-align: left;
+  flex: 0 0 58%;
+  scroll-snap-align: start;
+}
+
+.inspire-card .swatch {
+  min-height: 160px;
+}
+
+.inspire-card-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 28px 12px 12px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.55));
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.recreate-banner {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: var(--radius-lg);
+  background: var(--accent-soft);
+  border: 1px solid rgba(19, 78, 74, 0.18);
+}
+
+.recreate-banner h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+
+.recreate-banner p {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+}
+
+/* Profile */
+.profile-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.avatar {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #1a3d3a, #134e4a);
+  color: #f4faf8;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  border: 3px solid var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.profile-name {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.profile-style {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.pref-list {
+  display: grid;
+  gap: 10px;
+}
+
+.pref-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  font-size: 0.92rem;
+  gap: 12px;
+}
+
+.pref-item span:last-child {
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-align: right;
+}
+
+/* Style me */
+.choice-block {
+  margin-bottom: 22px;
+}
+
+.choice-block h3 {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.choice-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Outfit detail */
+.outfit-pieces {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.outfit-piece {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  text-align: left;
+  width: 100%;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.outfit-piece.is-selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.outfit-piece-thumb {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.outfit-piece-name {
+  font-weight: 600;
+}
+
+.outfit-piece-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.plus-sep {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: -2px 0;
+}
+
+/* Clothing detail */
+.detail-media {
+  aspect-ratio: 0.9;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  margin-bottom: 18px;
+  border: 1px solid var(--line);
+}
+
+.detail-title {
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: 14px;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.meta-cell {
+  padding: 14px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.meta-cell .k {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.meta-cell .v {
+  font-weight: 600;
+}
+
+.status-picker {
+  display: grid;
+  gap: 8px;
+}
+
+.status-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  text-align: left;
+  width: 100%;
+}
+
+.status-option.is-active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* Add clothing */
+.add-options {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.add-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  text-align: left;
+  width: 100%;
+}
+
+.add-option-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.add-option strong {
+  display: block;
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.add-option > span:last-child span {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.analysis-preview {
+  margin-top: 8px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.analysis-preview .swatch {
+  height: 200px;
+}
+
+.analysis-body {
+  padding: 18px;
+  background: var(--surface);
+}
